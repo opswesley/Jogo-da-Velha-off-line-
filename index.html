@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha - Float</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Jogo da Velha</h1>
+    <section id="scoreboard">
+      <div class="score-item">
+        <span class="score-label">Você:</span>
+        <span id="player-score" class="score-value">0</span>
+      </div>
+      <div class="score-item">
+        <span class="score-label">IA:</span>
+        <span id="ai-score" class="score-value">0</span>
+      </div>
+    </section>
+    <section class="settings">
+      <div class="texts">
+        <label for="difficulty">Dificuldade:</label>
+        <label for="player-symbol">Escolha seu símbolo:</label>
+      </div>
+      <div class="selects">
+        <select id="difficulty">
+          <option value="easy">Fácil</option>
+          <option value="medium">Médio</option>
+          <option value="hard">Difícil</option>
+        </select>
+        <select id="player-symbol">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </div>
+      <button id="start-game" class="btn" aria-label="Iniciar o jogo">Iniciar Jogo</button>
+    </section>
+    <div id="turn-message" class="hidden">Vez de: <span id="current-turn"></span></div>
+    <div id="game-board" class="board hidden">
+      <div class="cell" data-index="0" role="button" aria-label="Célula 1" tabindex="0"></div>
+      <div class="cell" data-index="1" role="button" aria-label="Célula 2" tabindex="0"></div>
+      <div class="cell" data-index="2" role="button" aria-label="Célula 3" tabindex="0"></div>
+      <div class="cell" data-index="3" role="button" aria-label="Célula 4" tabindex="0"></div>
+      <div class="cell" data-index="4" role="button" aria-label="Célula 5" tabindex="0"></div>
+      <div class="cell" data-index="5" role="button" aria-label="Célula 6" tabindex="0"></div>
+      <div class="cell" data-index="6" role="button" aria-label="Célula 7" tabindex="0"></div>
+      <div class="cell" data-index="7" role="button" aria-label="Célula 8" tabindex="0"></div>
+      <div class="cell" data-index="8" role="button" aria-label="Célula 9" tabindex="0"></div>
+    </div>
+    <div id="status-message" class="hidden status-message"></div>
+    <button id="restart-game" class="btn hidden" aria-label="Reiniciar o jogo">Reiniciar Jogo</button>
+    <button id="reset-score" class="btn hidden" aria-label="Zerar placar">Zerar Placar</button>
+    <div class="theme-selector">
+      <div class="theme-dot" data-theme="default" style="background: #6e8efb;" title="Tema Padrão"></div>
+      <div class="theme-dot" data-theme="dark" style="background: #2c3e50;" title="Tema Escuro"></div>
+      <div class="theme-dot" data-theme="nature" style="background: #27ae60;" title="Tema Natureza"></div>
+      <div class="theme-dot" data-theme="neon" style="background: #e91e63;" title="Tema Neon"></div>
+    </div>
+    <div id="dialog-box" class="dialog hidden">
+      <p id="dialog-message"></p>
+      <div class="dialog-buttons">
+        <button id="dialog-yes" class="btn dialog-btn">Sim</button>
+        <button id="dialog-no" class="btn dialog-btn">Não</button>
+      </div>
+    </div>
+  </main>
+  <div class="credits">
+    <p>Desenvolvido por <a href="https://github.com/opswesley" target="_blank">opswesley</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
