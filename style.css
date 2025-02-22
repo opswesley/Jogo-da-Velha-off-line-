@@ -41,6 +41,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none; /* Desabilita seleção de texto em todos os elementos */
 }
 
 body {
@@ -288,6 +289,7 @@ h1 {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   display: inline-block;
+  user-select: none; /* Desabilita seleção no turn-message */
 }
 
 #turn-message.hidden {
@@ -309,6 +311,7 @@ h1 {
   width: 80%;
   max-width: 300px;
   z-index: 10;
+  user-select: none; /* Desabilita seleção no diálogo */
 }
 
 [data-theme="dark"] .dialog {
@@ -340,6 +343,7 @@ h1 {
   font-size: clamp(0.7rem, 0.9vw, 1rem);
   width: 50%;
   margin-top: 0;
+  user-select: none; /* Desabilita seleção nos botões do diálogo */
 }
 
 .theme-selector {
@@ -348,6 +352,7 @@ h1 {
   gap: clamp(5px, 0.8vw, 10px);
   margin-top: clamp(8px, 1vw, 12px);
   padding: 0 clamp(5px, 0.8vw, 10px);
+  user-select: none; /* Desabilita seleção nas bolinhas de temas */
 }
 
 .theme-dot {
@@ -377,6 +382,7 @@ h1 {
   font-size: clamp(0.6rem, 0.8vw, 0.9rem);
   color: var(--text-color);
   opacity: 0.7;
+  user-select: none; /* Desabilita seleção nos créditos */
 }
 
 .credits a {
