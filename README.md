@@ -89,5 +89,6 @@ Bem-vindo ao "Jogo da Velha - Float," um jogo da velha offline simples, porém v
 ### Prévia
 ![Prévia do Jogo da Velha - Float](https://i.postimg.cc/xTWXKHC9/image.png)
 
+
 ### Licença
 Este projeto está licenciado sob a [Licença MIT](LICENSE), que permite uso gratuito, modificação e distribuição, sendo ideal para projetos open-source offline como esta versão final e leve em português.
